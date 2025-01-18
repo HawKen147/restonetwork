@@ -1,14 +1,22 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <?php
+        include_once("model/head.php")
+    ?>
 </head>
+<header>
+    <?php
+        include_once("model/header.php")
+    ?>
+</header>
 <body>
-    <form action="creates_tables.php" method="post">
-        <p>Cliquer sur le bouton pour créer la base de donnée et les tables</p>
-      <input type="submit" class="button" value="Envoyer">
-    </form>
+
 </body>
+<footer>
+
+</footer>
 </html>
