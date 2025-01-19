@@ -1,5 +1,5 @@
 function getSelectValueUpdateRestaurant(selectValue) {
-    console.log("je suis appelé js");
+    //console.log("je suis appelé ajax_update_restaurant");
     /**On récupère l'élement html <select>*/
     var selVal = selectValue.value;
     makeRequest('../model/restaurant/update_restaurant.php', selVal);
@@ -14,7 +14,7 @@ function makeRequest(url, userName) {
     httpRequest.onreadystatechange = alertContents;
     httpRequest.open('POST', url);
     httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    httpRequest.send('nom_restaurant=' + encodeURIComponent(userName));
+    httpRequest.send('choix=' + encodeURIComponent(userName));
 }
 
 function alertContents() {

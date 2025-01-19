@@ -1,5 +1,5 @@
 function getSelectValue(selectValue) {
-    console.log("je suis appelé js");
+    console.log("je suis appelé ajax_gestion_restaurant.js");
     /**On récupère l'élement html <select>*/
     var selVal = selectValue.value;
     makeRequest('../model/restaurant/update_restaurant.php', selVal);

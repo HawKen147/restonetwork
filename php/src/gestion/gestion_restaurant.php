@@ -15,8 +15,13 @@
 </header>
 <body>
     <p>Choisissez ce que vous voulez faire</p>
-    <form action="controleur/bdd_restaurant" method="post">
-        <select name="restaurant" id="restaurant" onchange="getSelectValue(this);">
+    <span><? if (isset($_SESSION["result"])){ 
+            echo ($_SESSION['result']); 
+            unset($_SESSION["result"]);  
+            };?>
+    </span>
+    <form>
+        <select name="choix" id="choix" onchange="getSelectValue(this);">
             <option value="">--Choisissez une action--</option>
             <option value="update">mettre à jour</option>
             <option value="add">ajouter</option>
@@ -32,4 +37,6 @@
 </footer>
 <script src="../js/ajax_gestion_restaurant.js"></script>
 <script src="../js/ajax_update_restaurant.js"></script>
+<script src="../js/update_fields_choice_restau.js"></script>
+<script src="../js/update_fields_choice_delete_restaurant.js"></script>
 </html>
