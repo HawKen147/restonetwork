@@ -1,5 +1,12 @@
 # restonetwork
+Pour tester le projet :
 
-Click the button below to start a new development environment:
+Télécharger tous les fichiers du repo
+Avoir docker d'installer sur son PC
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/HawKen147/restonetwork)
+lancer la commande : "docker-compose up -d"
+
+Se connecter au site web : http://localhost:8080
+Se connecter à php my admin : http://localhost:8008
+ Il faut créer la base de donnée depuis php my admin. 
+Ensuite sur le site web, on peut créer toutes les tables.
